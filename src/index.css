@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #0DBAB4;
+  --secondary-color: #eee;
+}
+
+*{
+  font-family: 'Cairo';
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.carousel-indicators {
+  margin-bottom: 0.2rem !important;
+}
+
+.PatientForm .ant-form-item .ant-form-item-control-input-content{
+  text-align: start !important;
+}
+.PatientForm label.ant-checkbox-wrapper,.PatientForm .gender-label,
+.PatientForm .ant-form-item-label{
+  font-weight: 700;
+}
+
+.PatientForm .radio-container .ant-form-item-label label{
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.ant-radio-wrapper .ant-radio-checked::after{
+  border: 1px solid var(--primary-color) !important;
+}
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner ,.ant-checkbox-checked .ant-checkbox-inner{
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner ,.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner{
+  background-color: var(--primary-color) !important;
+}
+
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner{
+  border-color: var(--primary-color) !important;
+}
+
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+  border-color: var(--primary-color);
+}
+.submit-button.ant-form-item .ant-form-item-control-input-content{
+  text-align: center !important;
+}
+
+.list-group-item label{
+  margin-bottom: 0 !important;
+  margin: 10px !important;
+}

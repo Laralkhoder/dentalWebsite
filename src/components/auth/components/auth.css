@@ -1,0 +1,104 @@
+.main-container{
+  min-height:100vh;
+  width:100%;
+  background-color: #90cbc9;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.auth-container{
+  width:fit-content;
+display: grid;
+grid-template-columns: 50% 50%;
+background-color: white;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding:50px;
+
+}
+.img-container img{
+  width: 500px;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  padding:20px 50px;
+  background-color: #eee;
+
+}
+.three-inputs{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+@media (max-width:992px) {
+  .auth-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container{
+    width: 100%;
+    height: 100vh;
+  }
+  .img-container{
+    display: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.auth-btn{
+  background-color: var(--primary-color);
+  color: white;
+margin-bottom: 0;
+}
+.auth-footer{
+  width: fit-content;
+  margin:10px auto;
+  
+}
+.auth-btn:hover{
+  background-color: #0a9a95 !important;
+  
+}
+.ant-input:focus,.ant-input:hover,.ant-select:hover,.ant-input-affix-wrapper:hover,.ant-input-affix-wrapper:focus,.ant-input-affix-wrapper:focus-within{
+  border-color:var(--primary-color);
+}
+
+
+.ant-select-focused:where(.css-dev-only-do-not-override-2q8sxy).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector{
+  border-color:var(--primary-color);
+}
+
+.mini-container{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+.ant-form-item .ant-form-item-control-input-content{
+  text-align:center;
+}
+.ant-message-custom-content.ant-message-error,.ant-message-success{
+display:flex;
+border-radius: 5px 
+}
+.ant-message-error{
+  color: red;
+}
+.ant-message-success{
+  color: #17ad17;
+
+}
